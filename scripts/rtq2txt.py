@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import argparse
 from rtq2txt import rtq2txt
 import rt
