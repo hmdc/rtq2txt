@@ -4,7 +4,7 @@
 # example:
 # ./rt_qmark_spam.sh same values as you use
 
-RTQ2TXT=$(which rtq2txt.py 2>/dev/null||echo "/usr/bin/python ./rtq2txt.py")
+RTQ2TXT=$(which do_rtq2txt.py 2>/dev/null||echo "/usr/bin/python ./rtq2txt.py")
 SA_LEARN=$(which sa-learn 2>/dev/null||echo "NOT_INSTALLED")
 FIND=$(which find)
 

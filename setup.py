@@ -9,5 +9,5 @@ setup(name='rtq2txt',
       license='MIT',
       packages=['rtq2txt'],
       requires=['rt'],
-      scripts=['scripts/rtq_mark_spam.sh', 'scripts/rtq2txt.py']
+      scripts=['scripts/rtq_mark_spam.sh', 'scripts/do_rtq2txt.py']
 )
