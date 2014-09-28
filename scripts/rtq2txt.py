@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 import argparse
-from rtq2txt import rtq2txt
+import rtq2txt
 import rt
 
 def run(user, passwd, uri, queue, outputdir, status):
 	tracker = rt.Rt(uri + '/REST/1.0/', user, passwd)
 	tracker.login()
 
-	rtq2txt(tracker, queue, outputdir, status)
+	rtq2txt.rtq2txt(tracker, queue, outputdir, status)
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser(description="Transforms an RT queue into txt files, writing them to a specified directory.")
