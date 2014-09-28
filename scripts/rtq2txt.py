@@ -7,7 +7,7 @@ def run(user, passwd, uri, queue, outputdir, status):
 	tracker = rt.Rt(uri + '/REST/1.0/', user, passwd)
 	tracker.login()
 
-	rtq2txt.run(tracker, queue, outputdir, status)
+	rtq2txt.execute(tracker, queue, outputdir, status)
 
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser(description="Transforms an RT queue into txt files, writing them to a specified directory.")
