@@ -5,7 +5,7 @@ import os
 import errno
 import inspect
 
-def rtq2txt(tracker, queue, outputdir, _status):
+def do_rtq2txt(tracker, queue, outputdir, _status):
 
 	# Check if tracker is logged in
 	try:
